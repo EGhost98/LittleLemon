@@ -1,7 +1,7 @@
 # LittleLemon
-Test These API END Points - 
+##Test These API END Points - 
 
-restaurant/booking/tables/
-api/items
-api/items/{pk}
-auth/
+1. `restaurant/booking/tables/`
+2. `api/items`
+3. `api/items/{pk}`
+4. `auth/`
