@@ -8,15 +8,15 @@ from reservation.serializers import MenuSerializer
 class MenuViewTest(TestCase):
     def setUp(self):
         # Add test instances of Menu model
-        Menu.objects.create(name='Pizza', price=9.99)
-        Menu.objects.create(name='Burger', price=5.99)
+        Menu.objects.create(Title='Pizza', Price=9.99, Inventory=1)
+        Menu.objects.create(Title='Burger', Price=5.99, Inventory=1)
         # Add more test instances if needed
 
     def test_getall(self):
         # Create an instance of the API client
         client = APIClient()
         # Retrieve all Menu objects via the API
-        url = reverse('menu-list')
+        url = reverse('items')
         response = client.get(url)
         # Serialize the Menu objects for comparison
         menus = Menu.objects.all()

@@ -10,7 +10,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 class MenuSerializer(serializers.ModelSerializer):
     class Meta:
-        mdoel = Menu
+        model = Menu
         fields = '__all__'
 
 
